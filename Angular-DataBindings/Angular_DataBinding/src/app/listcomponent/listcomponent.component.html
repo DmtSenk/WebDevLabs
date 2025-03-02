@@ -1,19 +1,19 @@
-<h2>President of Ireland </h2> <!-- -->
+<h2>President of Ireland </h2> <!-- Heading -->
 
-<ul>            <!-- -->
-    <li *ngFor="let president of presidents">   <!-- -->
-        {{ president }}
+<ul>           <!-- Iterates over presidents array -->
+    <li *ngFor="let president of presidents">   
+        {{ president }} <!-- Displays each president from array-->
     </li>
 </ul>
 
-<ol>            <!-- -->
-    @for(pres of presidents;track pres){    <!-- -->
-        <li>{{ pres }}</li>
+<ol>            <!-- Iterates over presidents array -->
+    @for(pres of presidents;track pres){    
+        <li>{{ pres }}</li> <!-- Displays each president from array-->
     }
 </ol>
 
-<ul>            <!-- -->
+<ul>            <!-- Iterates over presidents array -->
     <li *ngFor="let president1 of presidents1">
-        {{president1.name}} {{president1.term}}     <!-- -->
+        {{president1.name}} {{president1.term}}     <!-- Displays each president from array-->
     </li>
 </ul>
