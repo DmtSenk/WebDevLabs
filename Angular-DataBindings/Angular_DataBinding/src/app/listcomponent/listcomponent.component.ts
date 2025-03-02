@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core'; // importin Component
+import { CommonModule } from '@angular/common'; // importin CommonModule
 
 @Component({
   selector: 'app-listcomponent',
@@ -8,10 +8,12 @@ import { CommonModule } from '@angular/common';
   styleUrl: './listcomponent.component.css'
 })
 export class ListcomponentComponent {
+  // Array of presidents names
   presidents: string[] = ["Higgins ","McAleese ","Robinson "," Hillery "," O Dalaigh"];
 
+  // Array of objects with presidents names and terms
   presidents1: any[] =
-    [{name: "Higgins", term:"2011-"},
+    [{name: "Higgins", term:"2011-"},   
     {name: "McAleese", term:"1997-2011"},
     {name: "Robinson", term:"1990-1997"},
     {name: "Hillery", term:"1976-1990"},
